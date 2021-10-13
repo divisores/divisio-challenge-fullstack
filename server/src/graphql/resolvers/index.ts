@@ -1,5 +1,5 @@
-import accountResolver from './account'
+import pokemonsResolver from './pokemonsResolver'
 
 export default [
-  accountResolver
+  pokemonsResolver
 ]

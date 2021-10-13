@@ -11,7 +11,7 @@ const httpLink = createHttpLink({
 
 const cleanTypeName = new ApolloLink((operation, forward) => {
   if (operation.variables) {
-    const omitTypename = (key: string, value: any) =>
+    const omitTypename = (key: string, value: string) =>
       key === '__typename' ? undefined : value
     operation.variables = JSON.parse(
       JSON.stringify(operation.variables),
